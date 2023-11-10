@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Staking DApp</title>
+</head>
+<body style="background-color: #B5C7F7">
+    <div class="container">
+        <h1>Staking DApp</h1>
+        <div>
+            <h2>Stake Tokens</h2>
+            <form id="stakeForm">
+                <label for="stakeAmount">Amount to Stake:</label>
+                <input type="number" id="stakeAmount" required>
+                <button type="submit">Stake</button>
+            </form>
+        </div>
+        <div>
+            <h2>Withdraw Rewards</h2>
+            <button id="withdrawButton">Withdraw</button>
+        </div>
+        <div>
+            <h2>Distribute Rewards</h2>
+            <button id="distributeButton">Distribute</button>
+        </div>
+        <div>
+            <h2>User Information</h2>
+            <p>Your Address: <span id="userAddress"></span></p>
+            <p>Your Balance: <span id="userBalance"></span> Tokens</p>
+            <p>Your Staked Balance: <span id="userStakedBalance"></span> Tokens</p>
+            <p>Your Staking Start Time: <span id="userStakingStartTime"></span></p>
+            <p>Your Rewards: <span id="userRewards"></span> Tokens</p>
+        </div>
+    </div>
+    <style>
+        /*body{*/
+        /*    position: relative;*/
+        /*    padding: 0;*/
+        /*    margin: 0;*/
+        /*}*/
+        /*body::before{*/
+        /*    content: '';*/
+        /*    position: absolute;*/
+        /*    width: 100%;*/
+        /*    height: 100%;*/
+        /*    background: url("https://i.pinimg.com/originals/36/e4/d0/36e4d0b856694fc471344b644a1dd6e4.gif") no-repeat;*/
+        /*    background-size: cover;*/
+        /*    left: 0;*/
+        /*    top: 0;*/
+        /*}*/
+        .container{
+            max-width: 1250px;
+            margin: 0 auto;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
